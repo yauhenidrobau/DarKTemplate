@@ -9,7 +9,7 @@
 import UIKit
 
 
-final class LoginViewModel {
+final class SignInViewModel {
     
     weak var view: UIViewController?
     var _email: String = ""
@@ -37,11 +37,8 @@ final class LoginViewModel {
     }
 }
 
-extension LoginViewModel : LoginProtocol {
+extension SignInViewModel : SignInProtocol {
     func signIn() {
         
-    }
-    
-    func signUp() {
     }
 }

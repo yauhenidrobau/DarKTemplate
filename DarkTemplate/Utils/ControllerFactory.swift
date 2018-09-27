@@ -10,8 +10,8 @@ import UIKit
 
 class ControllerFactory {
     
-    static func loginView(scrView: UIViewController) -> LoginVC {
-        let loginViewModel = LoginViewModel(srcView: scrView)
-        return LoginVC(model: loginViewModel)
+    static func SignInView(scrView: UIViewController) -> SignInVC {
+        let loginViewModel = SignInViewModel(srcView: scrView)
+        return SignInVC(model: loginViewModel)
     }
 }

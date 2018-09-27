@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ONu-DE-N6V">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,9 +13,9 @@
         <!--Navigation Controller-->
         <scene sceneID="JPQ-VX-riF">
             <objects>
-                <navigationController id="ONu-DE-N6V" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="ONu-DE-N6V" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PNK-if-e2C">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -33,9 +34,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login.png" translatesAutoresizingMaskIntoConstraints="NO" id="HHi-9H-QCA">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wFq-nw-U78" userLabel="Header">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="243.33333333333334"/>
                                 <subviews>
@@ -45,7 +43,10 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWP-tn-eS6">
                                                 <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="50"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Sign In"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="Login">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="showSignInScreen" destination="jux-Tv-EGs" eventType="touchUpInside" id="EY0-Rv-UxJ"/>
                                                 </connections>
@@ -53,7 +54,10 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyt-oU-OBw">
                                                 <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="50"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Sign Up"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="Register">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="showSignUpScreen" destination="jux-Tv-EGs" eventType="touchUpInside" id="Wdu-A7-1Mx"/>
                                                 </connections>
@@ -78,17 +82,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="j2l-bP-dbo" firstAttribute="trailing" secondItem="HHi-9H-QCA" secondAttribute="trailing" id="00X-66-HSv"/>
                             <constraint firstItem="j2l-bP-dbo" firstAttribute="trailing" secondItem="x7h-yV-jOP" secondAttribute="trailing" id="8Fx-Gr-Sod"/>
                             <constraint firstItem="wFq-nw-U78" firstAttribute="top" secondItem="quu-ka-q12" secondAttribute="top" id="GUS-J3-pKS"/>
                             <constraint firstItem="wFq-nw-U78" firstAttribute="height" secondItem="quu-ka-q12" secondAttribute="height" multiplier="200:667" id="L8G-UF-ffs"/>
-                            <constraint firstItem="HHi-9H-QCA" firstAttribute="leading" secondItem="j2l-bP-dbo" secondAttribute="leading" id="PIc-Mv-z3K"/>
                             <constraint firstItem="j2l-bP-dbo" firstAttribute="trailing" secondItem="wFq-nw-U78" secondAttribute="trailing" id="deT-p9-XAR"/>
                             <constraint firstItem="x7h-yV-jOP" firstAttribute="leading" secondItem="j2l-bP-dbo" secondAttribute="leading" id="f8B-b4-DrE"/>
                             <constraint firstAttribute="bottom" secondItem="x7h-yV-jOP" secondAttribute="bottom" id="gBQ-3K-V3A"/>
-                            <constraint firstItem="HHi-9H-QCA" firstAttribute="top" secondItem="quu-ka-q12" secondAttribute="top" id="kax-Iw-ahg"/>
                             <constraint firstItem="wFq-nw-U78" firstAttribute="leading" secondItem="j2l-bP-dbo" secondAttribute="leading" id="l1h-Hb-Ots"/>
-                            <constraint firstItem="j2l-bP-dbo" firstAttribute="bottom" secondItem="HHi-9H-QCA" secondAttribute="bottom" id="sjX-Hr-4Y4"/>
                             <constraint firstItem="x7h-yV-jOP" firstAttribute="top" secondItem="wFq-nw-U78" secondAttribute="bottom" id="y6X-gl-CZ4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j2l-bP-dbo"/>
@@ -97,6 +97,8 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="embeddedView" destination="x7h-yV-jOP" id="ItN-Tf-5VC"/>
+                        <outlet property="signInButton" destination="DWP-tn-eS6" id="jMl-gP-Mf3"/>
+                        <outlet property="signUpButton" destination="oyt-oU-OBw" id="jaC-DI-Ysw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dJo-6H-zlF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -104,7 +106,4 @@
             <point key="canvasLocation" x="324" y="150"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Login.png" width="321" height="575"/>
-    </resources>
 </document>
