@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (4.7.3)
+  - ReachabilitySwift (4.1.0)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - TPKeyboardAvoiding (1.3.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - ReachabilitySwift
+  - SDWebImage
+  - TPKeyboardAvoiding
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - ReachabilitySwift
+    - SDWebImage
+    - TPKeyboardAvoiding
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  TPKeyboardAvoiding: cb69d5ddbe90ce0170e4bc2db1e5e41d4a3ad9a4
+
+PODFILE CHECKSUM: a9a80a10cd9602e6c001b1ea08b375fda9c379d7
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpVC" customModule="DarkTemplate" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="e9M-ag-NBR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ngx-XD-J9m">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="O4c-DI-Tqd" userLabel="TextFields">
+                            <rect key="frame" x="25" y="223.5" width="325" height="220"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ElS-gI-ifv" customClass="DTTextField" customModule="DTTextField">
+                                    <rect key="frame" x="0.0" y="0.0" width="325" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="DjC-7s-YNz"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aEI-bt-SbR" customClass="DTTextField" customModule="DTTextField">
+                                    <rect key="frame" x="0.0" y="90" width="325" height="40"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="87d-22-fBu" customClass="DTTextField" customModule="DTTextField">
+                                    <rect key="frame" x="0.0" y="180" width="325" height="40"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Aol-eR-Hwv" userLabel="Buttons">
+                            <rect key="frame" x="163.5" y="587" width="48" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRB-qW-qKC">
+                                    <rect key="frame" x="0.0" y="0.0" width="48" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                    <state key="normal" title="Sign In">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.090196078430000007" green="0.098039215690000001" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Aol-eR-Hwv" firstAttribute="centerX" secondItem="Ngx-XD-J9m" secondAttribute="centerX" id="6VE-FB-vJa"/>
+                        <constraint firstItem="O4c-DI-Tqd" firstAttribute="centerX" secondItem="Ngx-XD-J9m" secondAttribute="centerX" id="82E-MN-8HL"/>
+                        <constraint firstAttribute="trailing" secondItem="O4c-DI-Tqd" secondAttribute="trailing" constant="25" id="8en-YT-SGu"/>
+                        <constraint firstItem="O4c-DI-Tqd" firstAttribute="leading" secondItem="Ngx-XD-J9m" secondAttribute="leading" constant="25" id="8nh-4Z-RMW"/>
+                        <constraint firstAttribute="bottom" secondItem="Aol-eR-Hwv" secondAttribute="bottom" constant="50" id="AfV-HR-9qu"/>
+                        <constraint firstItem="O4c-DI-Tqd" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Ngx-XD-J9m" secondAttribute="top" constant="35" id="NO6-sQ-88U"/>
+                        <constraint firstItem="Aol-eR-Hwv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="O4c-DI-Tqd" secondAttribute="bottom" constant="20" id="nHe-MY-bXz"/>
+                        <constraint firstItem="O4c-DI-Tqd" firstAttribute="centerY" secondItem="Ngx-XD-J9m" secondAttribute="centerY" id="pRe-I0-gCm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Ngx-XD-J9m" secondAttribute="bottom" id="8PG-vX-iyU"/>
+                <constraint firstItem="Ngx-XD-J9m" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Rph-cL-W6A"/>
+                <constraint firstItem="Ngx-XD-J9m" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="m2E-zJ-Gib"/>
+                <constraint firstItem="Ngx-XD-J9m" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="o6M-KJ-gid"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
