@@ -22,6 +22,7 @@ final class LoginVC: BaseVC {
         
         signInVC = ControllerFactory.SignInView(scrView: self)
         signUpVC = SignUpVC(nibName:"SignUpVC", bundle: nil)
+        prepareAppearance()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -109,13 +110,18 @@ extension LoginVC {
             parentView?.addConstraints(aConstraints)
         }
     }
-
 }
 
 //MARK: - Private
 extension LoginVC {
     func selectButton(_ button:UIButton , withColor color:UIColor, selected:Bool) {
         button.backgroundColor = selected ? color : UIColor.clear
+    }
+    
+    func prepareAppearance() {
+        self.signInButton.setTitle("Login.title", for: .normal)
+        self.signUpButton.setTitle("Login.register.title", for: .normal)
+
     }
 }
 

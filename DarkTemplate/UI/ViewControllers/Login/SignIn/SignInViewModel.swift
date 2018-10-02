@@ -39,6 +39,8 @@ final class SignInViewModel {
 
 extension SignInViewModel : SignInProtocol {
     func signIn() {
-        
+        let feedModel = FeedViewModel(srcView: self.view!)
+        let feedVC = FeedVC(model: feedModel)
+        self.view?.navigationController?.pushViewController(feedVC, animated: true)
     }
 }

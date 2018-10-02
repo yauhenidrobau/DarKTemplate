@@ -12,7 +12,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpVC" customModule="DarkTemplate" customModuleProvider="target">
             <connections>
+                <outlet property="emailTF" destination="ElS-gI-ifv" id="uI7-sd-T2e"/>
                 <outlet property="mainView" destination="Ngx-XD-J9m" id="mWp-yj-sNN"/>
+                <outlet property="passTF" destination="aEI-bt-SbR" id="QcM-df-olx"/>
+                <outlet property="retypePassTF" destination="87d-22-fBu" id="68q-9g-aoM"/>
+                <outlet property="signUpButton" destination="tRB-qW-qKC" id="Tnb-Pi-HFZ"/>
                 <outlet property="view" destination="iN0-l3-epB" id="e9M-ag-NBR"/>
             </connections>
         </placeholder>
@@ -21,13 +25,13 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ngx-XD-J9m">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ngx-XD-J9m" customClass="TPKeyboardAvoidingScrollView">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="O4c-DI-Tqd" userLabel="TextFields">
                             <rect key="frame" x="25" y="223.5" width="325" height="220"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ElS-gI-ifv">
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ElS-gI-ifv" customClass="RaisePlaceholder" customModule="RaisePlaceholder">
                                     <rect key="frame" x="0.0" y="0.0" width="325" height="40"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="40" id="DjC-7s-YNz"/>
@@ -35,18 +39,32 @@
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                            <real key="value" value="0.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="hjL-k3-RqF"/>
+                                    </connections>
                                 </textField>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aEI-bt-SbR">
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aEI-bt-SbR" customClass="RaisePlaceholder" customModule="RaisePlaceholder">
                                     <rect key="frame" x="0.0" y="90" width="325" height="40"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="Zcr-xM-3s2"/>
+                                    </connections>
                                 </textField>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="87d-22-fBu">
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="87d-22-fBu" customClass="RaisePlaceholder" customModule="RaisePlaceholder">
                                     <rect key="frame" x="0.0" y="180" width="325" height="40"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="2b4-c5-eb6"/>
+                                    </connections>
                                 </textField>
                             </subviews>
                         </stackView>

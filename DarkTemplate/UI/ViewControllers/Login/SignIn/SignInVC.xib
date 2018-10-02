@@ -15,6 +15,7 @@
                 <outlet property="emailTF" destination="a2o-uH-xcS" id="zim-4X-tvr"/>
                 <outlet property="mainView" destination="K5h-aQ-uoY" id="3zE-hW-XnU"/>
                 <outlet property="passTF" destination="Zxc-5z-dEP" id="1wV-5u-bUg"/>
+                <outlet property="signInButton" destination="PSe-ee-pn3" id="ius-yf-B7u"/>
                 <outlet property="view" destination="iN0-l3-epB" id="H7Y-0X-C5O"/>
             </connections>
         </placeholder>
@@ -23,13 +24,13 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K5h-aQ-uoY">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K5h-aQ-uoY" customClass="TPKeyboardAvoidingScrollView">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="GVM-SO-QPv" userLabel="TextFields">
                             <rect key="frame" x="25" y="341" width="325" height="130"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a2o-uH-xcS">
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a2o-uH-xcS" customClass="RaisePlaceholder" customModule="RaisePlaceholder">
                                     <rect key="frame" x="0.0" y="0.0" width="325" height="40"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="40" id="zPA-Mu-Egr"/>
@@ -41,7 +42,7 @@
                                         <outlet property="delegate" destination="-1" id="vrG-cz-K3s"/>
                                     </connections>
                                 </textField>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zxc-5z-dEP">
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zxc-5z-dEP" customClass="RaisePlaceholder" customModule="RaisePlaceholder">
                                     <rect key="frame" x="0.0" y="90" width="325" height="40"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -88,12 +89,5 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="40.799999999999997" y="45.812807881773402"/>
         </view>
-        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="owk-Up-nRV">
-            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-            <nil key="textColor"/>
-            <nil key="highlightedColor"/>
-        </label>
     </objects>
 </document>

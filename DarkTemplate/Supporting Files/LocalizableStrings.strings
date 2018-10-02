@@ -1,0 +1,22 @@
+/* 
+  LocalizableStrings.strings
+  DarkTemplate
+
+  Created by Evgene Drobov on 9/27/18.
+  Copyright © 2018 drobov. All rights reserved.
+*/
+
+//Common
+"Common.Email" = "Email";
+"Common.Password" = "Password";
+"Common.RetypePassword" = "Retype Password";
+
+//Login
+"Login.title" = "Login";
+"Login.register.title" = "Register";
+
+//SignIn
+"SignIn.title" = "Sign In";
+
+//SignUp
+"SignUp.title" = "Sign Up";
